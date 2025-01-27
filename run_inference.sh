@@ -50,7 +50,7 @@ cp -r "$SOURCE_DIR/"* "$DEST_DIR/input_data/"
 python3 "$SCRIPT_DIR/nibio_inference/fix_naming_of_input_files.py" "$DEST_DIR/input_data"
 
 # UTM normalization 
-python3 "$SCRIPT_DIR/nibio_inference/pipeline_utm2local_parallel.py" -i "$DEST_DIR/input_data" -o "$DEST_DIR/utm2local"
+python3 "$SCRIPT_DIR/nibio_inference/pipeline_utm2local.py" -i "$DEST_DIR/input_data" -o "$DEST_DIR/utm2local"
 
 # Update the eval.yaml file with the correct paths
 cp "$SCRIPT_DIR/conf/eval.yaml" "$DEST_DIR"
