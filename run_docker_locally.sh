@@ -27,8 +27,8 @@ echo "Running the container"
 
 docker run -it --gpus all \
     --name $CONTAINER_NAME \
-    --mount type=bind,source=/home/Marko/SegAT/bucket_in_folder,target=/home/nibio/mutable-outside-world/bucket_in_folder \
-    --mount type=bind,source=/home/Marko/SegAT/bucket_out_folder,target=/home/nibio/mutable-outside-world/bucket_out_folder \
+    --mount type=bind,source=/home/marko/SegAT/bucket_in_folder,target=/home/nibio/mutable-outside-world/bucket_in_folder \
+    --mount type=bind,source=/home/marko/SegAT/bucket_out_folder,target=/home/nibio/mutable-outside-world/bucket_out_folder \
     $IMAGE_NAME 
 
 
